@@ -1,0 +1,7 @@
+ "use client";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { listDemoRequests } from "@/services/request.service";
+import type { DemoRequest } from "@/types/request";
+import { OrderStatus } from "@/components/patient/OrderStatus";
+export default function OrdersPage(){const [items,setItems]=useState<DemoRequest[]>([]);useEffect(()=>{setItems(listDemoRequests());},[]);return <main className="page-shell"><div className="container"><div className="page-heading"><span className="eyebrow">PATIENT DASHBOARD · DEMO</span><h1>Your medicine requests</h1><p>Requests saved in this browser only. This is a demonstration, not an authenticated account or real order tracking.</p></div><div className="action-row" style={{marginBottom:18}}><Link className="button button-primary" href="/request-medicine">New request</Link><button className="button button-secondary" onClick={()=>setItems(listDemoRequests())}>Refresh list</button></div>{items.length?<div className="stack">{items.map(r=><section className="panel" key={r.id}><OrderStatus request={r}/><div className="section-gap"><Link className="page-link" href={`/orders/${encodeURIComponent(r.id)}`}>View request details →</Link></div></section>)}</div>:<div className="empty-state">No requests in this browser yet.<br/><Link className="page-link" href="/request-medicine">Create a demo request →</Link></div>}</div></main>}

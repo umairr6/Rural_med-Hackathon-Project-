@@ -1,0 +1,2 @@
+import { MedicineRequestForm } from "@/components/patient/MedicineRequestForm";
+export default function RequestMedicinePage(){return <main className="page-shell"><div className="container"><div className="page-heading"><span className="eyebrow">PATIENT REQUEST</span><h1>Request a medicine</h1><p>Share the location and medicine details so participating pharmacies can review your request in the full product.</p></div><MedicineRequestForm/></div></main>}
