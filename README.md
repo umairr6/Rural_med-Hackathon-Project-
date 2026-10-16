@@ -1,4 +1,6 @@
-# RuralMed — Rural Healthcare Access Platform
+﻿# Rural_med-Hackathon-Project-
+
+# RuralMed â€” Rural Healthcare Access Platform
 
 **Tagline:** Healthcare access, closer to home.  
 **Launch focus:** Rural communities across the Kashmir Valley and Jammu region, India.  
