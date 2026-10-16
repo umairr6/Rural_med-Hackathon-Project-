@@ -1,5 +1,3 @@
-﻿# Rural_med-Hackathon-Project-
-
 # RuralMed â€” Rural Healthcare Access Platform
 
 **Tagline:** Healthcare access, closer to home.  
