@@ -1,4 +1,6 @@
-# RuralMed — Rural Healthcare Access Platform
+﻿# Rural_med-Hackathon-Project-
+
+# RuralMed â€” Rural Healthcare Access Platform
 
 **Tagline:** Healthcare access, closer to home.  
 **Launch focus:** Rural communities in Jammu and Kashmir, India.  
@@ -79,18 +81,18 @@ Copy-Item .env.example .env.local
 Open http://localhost:3000.
 
 Useful routes:
-- `/` — landing page
-- `/find-medicines` — medicine access introduction
-- `/request-medicine` — demo request form
-- `/orders` — demo request list
-- `/orders/RM-...` — demo request details (use a generated reference)
-- `/pharmacy/register` — pharmacy application demo
-- `/pharmacy/login` — pharmacy portal notice
-- `/pharmacy/dashboard` — demo pharmacy dashboard
-- `/admin/login` — admin portal notice
-- `/admin/dashboard` — demo operations dashboard
-- `/about` — about RuralMed
-- `/contact` — demo enquiry form
+- `/` â€” landing page
+- `/find-medicines` â€” medicine access introduction
+- `/request-medicine` â€” demo request form
+- `/orders` â€” demo request list
+- `/orders/RM-...` â€” demo request details (use a generated reference)
+- `/pharmacy/register` â€” pharmacy application demo
+- `/pharmacy/login` â€” pharmacy portal notice
+- `/pharmacy/dashboard` â€” demo pharmacy dashboard
+- `/admin/login` â€” admin portal notice
+- `/admin/dashboard` â€” demo operations dashboard
+- `/about` â€” about RuralMed
+- `/contact` â€” demo enquiry form
 
 The browser-local demo uses `localStorage`. Use fictional data only. Clearing browser site data clears the demo records.
 
@@ -200,40 +202,40 @@ RuralMed must not diagnose patients, prescribe medicines, recommend independent 
 
 ## 9. Development roadmap
 
-### Phase 1 — Foundation
+### Phase 1 â€” Foundation
 - [x] Next.js, TypeScript and Tailwind foundation.
 - [x] Responsive landing page and shared navigation/footer.
 - [x] Initial public routes and visual design system.
 
-### Phase 2 — Database and authentication
+### Phase 2 â€” Database and authentication
 - [x] Initial schema and starter RLS migration included.
 - [x] Supabase client helpers included.
 - [ ] Wire real Supabase Auth and protected session flows.
 - [ ] Test and harden RLS with multiple roles.
 - [ ] Generate current database types from deployed schema.
 
-### Phase 3 — Patient features
+### Phase 3 â€” Patient features
 - [x] Browser-local demo medicine request.
 - [x] Demo request list and details.
 - [ ] Persist requests securely in Supabase.
 - [ ] Private prescription uploads and review flow.
 - [ ] Saved addresses, consent, cancellation and support.
 
-### Phase 4 — Pharmacy features
+### Phase 4 â€” Pharmacy features
 - [x] Demo registration form and dashboard.
 - [x] Demo quote and status interactions.
 - [ ] Verified pharmacy application storage and admin approval.
 - [ ] Service-area matching, assigned requests and inventory review.
 - [ ] Secure quote submission and fulfilment workflow.
 
-### Phase 5 — Admin and matching
+### Phase 5 â€” Admin and matching
 - [x] Basic demo operations overview.
 - [ ] Protected admin access and audit logging.
 - [ ] Pharmacy approval/suspension actions.
 - [ ] Village matching and complaint management.
 - [ ] Real operational analytics.
 
-### Phase 6 — Testing and deployment
+### Phase 6 â€” Testing and deployment
 - [x] Initial test files included.
 - [ ] Run all tests and fix environment-specific issues.
 - [ ] Add end-to-end browser tests and authorization tests.
@@ -289,4 +291,4 @@ Replace `YOUR_GITHUB_REPOSITORY_URL` with your actual repository URL. Do not com
 
 ## 14. Project principle
 
-**Build the safe, useful core first:** patient request → approved pharmacy review → transparent quote → patient acceptance → pharmacy-arranged delivery and status tracking. Keep diagnosis, prescribing, live payments, native apps, AI diagnosis, GPS routing and advanced analytics out of the initial MVP.
+**Build the safe, useful core first:** patient request â†’ approved pharmacy review â†’ transparent quote â†’ patient acceptance â†’ pharmacy-arranged delivery and status tracking. Keep diagnosis, prescribing, live payments, native apps, AI diagnosis, GPS routing and advanced analytics out of the initial MVP.
